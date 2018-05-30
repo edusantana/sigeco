@@ -9,9 +9,17 @@ class Serie(models.Model):
     ensino = models.ForeignKey(Ensino, on_delete=models.CASCADE, help_text="A etapa do ensino em que a série está inserida")
     nome = models.CharField(max_length=100, help_text="Nome da série, ex: Jardim 1")
 
+    class Meta:
+        verbose_name = "série"
+        verbose_name_plural = "séries"
+
 class Organizacao(models.Model):
     nome = models.CharField(max_length=255)
     sigla = models.CharField(max_length=15)
+    
+    class Meta:
+        verbose_name = "organização"
+        verbose_name_plural = "organizações"
 
 class Componente(models.Model):
     organizacao = models.ForeignKey(Organizacao, on_delete=models.CASCADE, help_text="A organização que a escola faz parte, ex: Prefeitura de São Judas")
@@ -23,3 +31,6 @@ class Instituicao(models.Model):
     organizacao = models.ForeignKey(Organizacao, on_delete=models.CASCADE, help_text="A organização que essa instituição de ensino faz parte, ex: Prefeitura de São Judas")
     nome = models.CharField(max_length=255)
     sigla = models.CharField(max_length=15)
+    class Meta:
+        verbose_name = "instituição"
+        verbose_name_plural = "instituições"
