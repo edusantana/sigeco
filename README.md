@@ -45,4 +45,4 @@ Precisa informar que estamos utilizando essa aplicacao criada: [ajuda](https://d
 
 [Commit](https://github.com/edusantana/sigeco/commit/9595504a99a9ac6e2a6324bad067f3f1308bb7b1)
 
-- [Configurando idioma e fuso horário](https://github.com/edusantana/sigeco/commit/eae72a59ef9ecd323e6d99147f5ec618505f08c6)
+4. [Configurando idioma e fuso horário](https://github.com/edusantana/sigeco/commit/eae72a59ef9ecd323e6d99147f5ec618505f08c6)
