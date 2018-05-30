@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Ensino(models.Model):
-    nome = models.CharField(max_length=100, help_text="A etapa do ensino na educação em que a série está inserida, ex: Ensino Médio, Fundamental, EJA")
+    nome = models.CharField(max_length=100, help_text="A etapa do ensino na educação em que a série está inserida, ex: Infantil, Fundamental, Médio, EJA")
 
 class Serie(models.Model):
     ensino = models.ForeignKey(Ensino, on_delete=models.CASCADE, help_text="A etapa do ensino em que a série está inserida")
